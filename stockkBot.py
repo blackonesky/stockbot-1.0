@@ -1,3 +1,4 @@
+import os
 import aiohttp
 from bs4 import BeautifulSoup
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
@@ -8,7 +9,7 @@ import re
 from datetime import datetime
 import asyncio
 
-TOKEN = '7993735550:AAHJTnOml8-xyn2rQdqmjxquxngCONn5U_U'
+TOKEN = os.environ.get('TOKEN')
 
 SEEDS = {
     "Apple", "Bamboo", "Blueberry", "Carrot", "Corn",
